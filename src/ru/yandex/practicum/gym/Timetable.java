@@ -42,7 +42,7 @@ public class Timetable {
         return dayTraining.get(timeOfDay);
     }
 
-    public Map<String, Integer> getCountByCoaches () {
+    public Map<String, Integer> getCountByCoaches() {
         Map<Coach, Integer> coachCounter = new HashMap<>();
 
         for (TreeMap<TimeOfDay, TrainingSession> value : timetable.values()) {
